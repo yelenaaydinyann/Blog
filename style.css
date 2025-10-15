@@ -1,3 +1,11 @@
+body{
+  #grad1 {
+  height: 130px;
+  width: 300px;
+  background-color: red; 
+  background-image: linear-gradient(to right,blue, red, green);
+}
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -181,4 +189,20 @@ footer p{
   .contact h2 {
     font-size: 1.4rem;
   }
+}
+.grad1 {
+  height: 130px;
+  width: 300px;
+  background-color: red; 
+  background-image: linear-gradient(to right,blue, red, green);
+}.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: myAnimation;
+  animation-duration: 6s;
+}
+@keyframes myAnimation {
+  from {background-color: rgb(36, 63, 214);}
+  to {background-color: yellow;}
 }
