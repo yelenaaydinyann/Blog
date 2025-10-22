@@ -170,3 +170,30 @@ function objectEntriesList(obj) {
   return Object.entries(obj);
 }
 console.log(objectEntriesList({name: "Mariam", age: 30})); // [["name","Mariam"],["age",30]]
+
+
+let l = document.getElementById("myList");
+let input = document.getElementById("input");
+let button = document.getElementById("button1");
+newLi = document.createElement("li");  
+
+button.onclick = function(){
+  l.appendChild(newLi);
+  newLi.innerHTML = input.value;
+  input.value = "";
+};
+
+
+let p1 = document.getElementById("p1");
+let p2 = document.getElementById("p2");
+let p3 = document.getElementById("p3");
+
+p1.onclick = function(){
+  p1.style.backgroundColor = "green"
+};
+p2.onclick = function(){
+  p2.style.backgroundColor = "ligh blue"
+};
+p3.onclick = function(){
+  p3.style.backgroundColor = "yellow"
+};
