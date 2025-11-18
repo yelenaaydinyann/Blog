@@ -49,24 +49,6 @@ echo f3("na", "banana") . "<br>";    // 2
 echo f3("b", "banana") . "<br>";     // 1
 echo f3("x", "banana") . "<br>";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $fullname = htmlspecialchars($_POST['fullname']);
-    $phone    = htmlspecialchars($_POST['phone']);
-    $email    = htmlspecialchars($_POST['email']);
-    $age      = (int)$_POST['age'];
-    $gender   = htmlspecialchars($_POST['gender']);
-    $message  = htmlspecialchars($_POST['message']);
-
-    echo "<h2>Ձեր տվյալները</h2>";
-    echo "Անուն և ազգանուն: $fullname<br>";
-    echo "Հեռախոս: $phone<br>";
-    echo "Էլ.փոստ: $email<br>";
-    echo "Տարիք: $age<br>";
-    echo "Սեռ: $gender<br>";
-    echo "Նամակ: $message<br>";
-} else {
-    echo "<p>Խնդրում ենք լրացնել ֆորմը:</p>";
-}
-    ?>
+ ?>
 </body>
 </html>
