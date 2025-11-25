@@ -8,7 +8,7 @@
 </head>
 <body>
     <main class="container">
-    <h1>Գրանցման ֆորմա</h1>
+    <h1>Գրանցում</h1>
 
     <?php
     $old = function($k){
@@ -20,7 +20,7 @@
     }
     ?>
 
-    <form action="process.php" method="POST" class="form">
+    <form action="form-submit.php" method="POST" class="form">
       <fieldset>
         <legend>Հիմնական տվյալներ</legend>
 
