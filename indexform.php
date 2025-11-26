@@ -20,6 +20,7 @@
     ?>
 
     <form action="form-submit.php" method="POST" class="form">
+    <form action="form-submit.php" method="POST" class="form">
       <fieldset>
         <legend>Հիմնական տվյալներ</legend>
 
