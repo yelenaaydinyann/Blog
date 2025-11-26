@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Logo" class = "logo">
+        <ul>
+            <li><a href = "index.html">HOME</a></li>
+            <li><a href = "about.html">ABOUT</a></li>
+            <li><a href = "contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+    <main class="contact">
+        <h2>Contact Us</h2>
+        <form>
+        <form action="index.php" method="post">
+            <label>Full Name</label>
+            <input type="text" name="fullname" required>
+            
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Age</label>
+            <input type="number" name="age" required>
+
+            <label>Gender</label>
+            <Select name ="gender">
+                <option>Female</option>
+                <option>Male</option>
+                <option>Prefer not to say</option>
+            </Select>
+
+            <label>Message</label>
+            <textarea name="message" rows="3"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+   </main>
+   <h1> Animation</h1>
+   <div class="animation"></div>
+   <h1>Radial Gradient </h1>
+
+<div id="grad1"></div>
+   
+    <footer>
+        <ul>
+            <li>Armenia,Tavush,Valance </li>
+            <li><a href="mail to:blog@blog.blog">blog@blog.blog</a></li>
+            <li><a href="+374111111">+374 11 111111</a></li>
+       </ul>
+    </footer>
+</body>
+</html>

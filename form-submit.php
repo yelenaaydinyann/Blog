@@ -1,19 +1,12 @@
-<<<<<<< HEAD
-<?php 
-   // var_dump($_REQUEST);
-    //var_dump($_GET);
-   // var_dump($_POST);
-echo "<p>($_POST['name'])</p>";
-?>
-=======
 <?php
+session_start();
 
 function redirectWithError($message) {
-    $params = $_POST;
-    $params['error'] = $message;
 
-    $query = http_build_query($params);
-    header("Location:indexform.php?$query");
+    $_SESSION['error'] = $message;
+    $_SESSION['old']   = $_POST;
+
+    header("Location: indexform.php");
     exit;
 }
 
@@ -35,7 +28,6 @@ if ($firstname === '' || $lastname === '' || $email === '' || $password === '' |
 }
 
 
-
 if (!preg_match('/^\p{L}+$/u', $firstname)) {
     redirectWithError("Անուն դաշտը պետք է պարունակի միայն տառեր։");
 }
@@ -54,7 +46,6 @@ if ($password !== $confirm) {
     redirectWithError("Գաղտնաբառերը չեն համընկնում։");
 }
 
-
 if ($phone !== "") {
     if (!preg_match('/^\+374 \d{2} \d{3} \d{3}$/', $phone)) {
         redirectWithError("Հեռախոսահամարը պետք է լինի +374 00 000 000 ձևաչափով։");
@@ -72,8 +63,5 @@ if ($birthdate !== "") {
     }
 }
 
-
-// Եթե ամեն ինչ OK է
 echo "<h1>Շնորհակալություն, գրանցումը հաջողված է!</h1>";
 
->>>>>>> 13e423e5d32935221997c7ce6287c18f523cf4ae
